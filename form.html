@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration form</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <style>
+      form {
+        max-width: 800px;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body class="bg-light">
+    <h1 class="text-center mb-5">Registration form</h1>
+    <form class="bg-white p-4 border rounded shadow-sm">
+      <!-- Fullname -->
+      <div class="mb-3">
+        <label for="fullname" class="form-label">Fullname:</label>
+        <input
+          type="text"
+          class="form-control"
+          name="fullname"
+          id="fullname"
+          placeholder="Enter your fullname here..."
+        />
+      </div>
+      <!-- Email -->
+      <div class="mb-3">
+        <label for="email" class="form-label d-block">Email:</label>
+        <input
+          class="form-control"
+          type="email"
+          name="email"
+          id="email"
+          placeholder="example@gmail.com..."
+        />
+      </div>
+      <!-- password -->
+      <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input
+          type="password"
+          class="form-control"
+          name="password"
+          id="password"
+          placeholder="Enter a secure password..."
+        />
+      </div>
+      <!-- radiobutton -->
+      <div class="mb-3">
+        <label for="Gender" class="form-label d-block">Gender:</label>
+        <div class="form-check form-check-inline">
+          <input
+            type="radio"
+            class="form-check-input"
+            name="gender"
+            id="male"
+          />
+          <label for="male" class="form-check-label">Male:</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="gender"
+            id="female"
+          />
+          <label for="female" class="form-check-label">Female:</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="gender"
+            id="other"
+          />
+          <label for="other" class="form-check-label">Other:</label>
+        </div>
+      </div>
+      <!-- Checkbox -->
+      <div class="mb-3">
+        <label for="checkbox" class="form-label d-block">Courses:</label>
+        <div>
+          <input
+            class="form-check-input"
+            type="checkbox"
+            name="Digital marketing course"
+            id="Digital marketing course"
+          />
+          <label for="Digital marketing course" class="form-check-label"
+            >Digital marketing course:</label
+          >
+        </div>
+        <div>
+          <input
+            class="form-check-input"
+            type="checkbox"
+            name="Advanced web designing"
+            id="Advanced web designing"
+          />
+          <label for="Advanced web designing" class="form-check-label"
+            >Advanced web designing:</label
+          >
+        </div>
+        <div>
+          <input
+            class="form-check-input"
+            type="checkbox"
+            name="Full stack web development"
+            id="Full stack web developmen"
+          />
+          <label for="Full stack web development" class="form-check-label"
+            >Full stack web development:</label
+          >
+        </div>
+      </div>
+      <!-- Dropdown -->
+      <div class="mb-3">
+        <label for="Country" class="form-label">Country:</label>
+        <select class="form-select" name="Country" id="Country">
+          <option selected disabled>Choose your Country</option>
+          <option>Australia</option>
+          <option>Antartica</option>
+          <option>Bangladesh</option>
+          <option>brazil</option>
+          <option>Canada</option>
+          <option>China</option>
+          <option>Denmark</option>
+        </select>
+      </div>
+      <!-- Comments -->
+      <div class="mb-3">
+        <label for="comments" class="form-label">Comments:</label>
+        <textarea
+          name="Comments"
+          id="comments"
+          placeholder="Write something"
+          rows="5"
+          class="form-control"
+        ></textarea>
+      </div>
+      <!-- Upload files -->
+      <div class="mb-3">
+        <label for="Upload Resume" class="form-label">Upload Resume:</label>
+        <input type="file" class="form-control" id="resume" />
+      </div>
+      <!-- Submit -->
+      <div>
+        <button type="button" class="btn btn-primary 4px w-100">submit:</button>
+      </div>
+    </form>
+  </body>
+</html>

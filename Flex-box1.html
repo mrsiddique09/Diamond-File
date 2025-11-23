@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <style>
+      .container {
+        background-color: wheat;
+        border: 3px brown solid;
+        height: 600px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: row;
+        /* flex-wrap: wrap; */
+        gap: 25px;
+      }
+      /* space-around start flex-end space-between */
+      .box {
+        border: 3px solid black;
+        background-color: rgb(136, 141, 141);
+        width: 200px;
+        text-align: center;
+        padding: 15px;
+        height: 100px;
+      }
+      .box1 {
+        flex-basis: 500px;
+        flex-grow: 2;
+        flex-shrink: 0;
+      }
+      .box2 {
+        flex-basis: 500px;
+        flex-grow: 1;
+        flex-shrink: 1;
+      }
+      .box3 {
+        flex-basis: 500px;
+        flex-grow: 1;
+        flex-shrink: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Flex box basics</h1>
+    <div class="container">
+      <div class="box box1"><img src="img/bmw.jpg" alt=""></div>
+      <div class="box box2">Box2</div>
+      <div class="box box3">Box3</div>
+    </div>
+  </body>
+</html>
