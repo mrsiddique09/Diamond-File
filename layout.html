@@ -27,7 +27,7 @@
         --c2: rgba(42, 31, 35, 0.621);
         --c3: black;
         --c4: gray;
-        --c5:  rgb(46, 153, 153);
+        --c5: rgb(46, 153, 153);
         --c6: rgba(232, 239, 201, 0.647);
         --c7: white;
       }
@@ -41,9 +41,7 @@
         padding: 60px;
         border-bottom: 2px solid var(--c5);
         border: solid 2px var(--c5);
-         font-style: italic;
-        
-       
+        font-style: italic;
       }
       header h1 {
         font-size: 50px;
@@ -51,8 +49,7 @@
         margin-bottom: 10px;
         color: var(--c5);
         font-size: 80px;
-       text-shadow: 3px  3px var(--c7) ;       
-        
+        text-shadow: 3px 3px var(--c7);
       }
       header p {
         color: var(--c5);
@@ -74,6 +71,7 @@
         color: var(--c5);
         text-decoration: underline;
       }
+
       /* { main section} */
       main {
         padding: 30px;
@@ -89,20 +87,26 @@
         margin-top: 30px;
         font-style: italic;
       }
-     section p{
-      color: var(--c3);
-      font-style:italic ;
-     }
-      footer {
-       background-color: var(--c2);
+      section p {
+        color: var(--c3);
+        font-style: italic;
       }
-      form {
-        width: 50%;
+      footer {
+        background-color: var(--c5);
+        padding: 20px;
+        border: 3px solid var(--c3);
+        
+      }
+      section form {
+        width: 70%;
         margin: auto;
         padding: 20px;
       }
-      
-      
+      section .card-header {
+        background-color: var(--c5);
+        font-size: 20px;
+        text-align: center;
+      }
     </style>
   </head>
   <body>
@@ -176,53 +180,151 @@
         </div>
       </section>
 
-      <hr class="my-3" />
+      <hr class="mx-5" />
 
+      <section id="services">
+        <h2>Our Services</h2>
+        <div class="sec row">
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-header">Digital Marketing</div>
+              <div class="card-body">
+                <p class="card-text">
+                  Strategizing and executing effective digital campaigns to
+                  maximize your online presence.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-header">Mobile App Developmen</div>
+              <div class="card-body">
+                <p class="card-text">
+                  Creating native and cross-platform mobile applications for
+                  diverse user needs
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-header">Cloud Solutions</div>
+              <div class="card-body">
+                <h5 class="Web designer"></h5>
+                <p class="card-text">
+                  Implementing scalable and secure cloud infrastructure to
+                  optimize your operations.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-      <section> 
-        <form class=" border-3 mt-5 p-4 rounded shadow-lg">
-      <label for="Fullname" class="form-label">Full name:</label>
-      <input
-        type="text"
-        id="fullname"
-        name="fullname"
-        placeholder="Enter your name here"
-         class="form-control mt-2"
-      />
+      <hr class="my-5" />
 
-      <label for="Email" class="form-label">Email:</label>
-      <input
-        type="Email"
-        id="Email"
-        name="Email"
-        placeholder="Enter your email here"
-        class="form-control mt-2"
-       
-      />
+      <section id="portfolio">
+        <h2>Our Portfolio</h2>
+        <div class="row ">
+          <div class="col-md-4">
+            <div class="card" style="width: 18rem">
+              <img
+                src="https://picsum.photos/seed/picsum/400/250"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Web designer</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card’s content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card" style="width: 18rem">
+              <img
+                src="https://picsum.photos/seed/picsum/400/250"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Graphics Designer</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card’s content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card" style="width: 18rem">
+              <img
+                src="https://picsum.photos/seed/picsum/400/250"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Web Developer</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card’s content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-      <label for="message"> Message:</label>
-      <textarea
-        name="message"
-        id="message"
-        rows="5"
-        cols="40"
-        class="form-control mt-2"
-         
-        placeholder="Enter your message here"
-      ></textarea>
-      <button class="btn btn-danger w-100 mt-3">Submit</button>
-    </form>
-  </section>
-   
-    
-  
-      
-       
-</main>
-<hr class="my-3"
+      <hr class="my-5" />
 
-<footer> <p>
-          © 2025 Your Company. All rights reserved. | Designed with Bootstrap
-        </p></footer>
+      <section id="Contact">
+        <div class="container">
+          <h2>Contact Us</h2>
+          <form class="border border-dark border-3 mt-5 p-4 rounded shadow-lg">
+            <label for="Fullname" class="form-label">Full name:</label>
+            <input
+              type="text"
+              id="fullname"
+              name="fullname"
+              placeholder="Enter your name here"
+              class="form-control mt-2"
+            />
+
+            <label for="Email" class="form-label">Email:</label>
+            <input
+              type="Email"
+              id="Email"
+              name="Email"
+              placeholder="Enter your email here"
+              class="form-control mt-2"
+            />
+
+            <label for="message"> Message:</label>
+            <textarea
+              name="message"
+              id="message"
+              rows="5"
+              cols="40"
+              class="form-control mt-2"
+              placeholder="Enter your message here"
+            ></textarea>
+            <button class="btn btn-dark w-100 mt-3">Submit</button>
+          </form>
+        </div>
+      </section>
+    </main>
+     <hr class="my-5" />
+     <footer>
+      <p class="text-center"> &copy; 2025 Your Company. All rights reserved. | Designed with boostrap</p>
+     </footer>
   </body>
 </html>
