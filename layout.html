@@ -91,12 +91,6 @@
         color: var(--c3);
         font-style: italic;
       }
-      footer {
-        background-color: var(--c5);
-        padding: 20px;
-        border: 3px solid var(--c3);
-        
-      }
       section form {
         width: 70%;
         margin: auto;
@@ -105,7 +99,20 @@
       section .card-header {
         background-color: var(--c5);
         font-size: 20px;
+        border: 3px var(--c3) solid;
         text-align: center;
+      }
+      section .card {
+        border: 2px var(--c3) solid;
+      }
+      section .btn {
+        border: 3px var(--c3) solid;
+        background-color: var(--c5);
+      }
+      footer {
+        background-color: var(--c5);
+        padding: 20px;
+        border: 3px solid var(--c3);
       }
     </style>
   </head>
@@ -185,7 +192,7 @@
       <section id="services">
         <h2>Our Services</h2>
         <div class="sec row">
-          <div class="col-md-4">
+          <div class="col-md-4 mb-4">
             <div class="card">
               <div class="card-header">Digital Marketing</div>
               <div class="card-body">
@@ -193,23 +200,23 @@
                   Strategizing and executing effective digital campaigns to
                   maximize your online presence.
                 </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <a href="#" class="btn">Go somewhere</a>
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 mb-4">
             <div class="card">
-              <div class="card-header">Mobile App Developmen</div>
+              <div class="card-header">Mobile App Development</div>
               <div class="card-body">
                 <p class="card-text">
                   Creating native and cross-platform mobile applications for
                   diverse user needs
                 </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <a href="#" class="btn">Go somewhere</a>
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 mb-4">
             <div class="card">
               <div class="card-header">Cloud Solutions</div>
               <div class="card-body">
@@ -218,7 +225,44 @@
                   Implementing scalable and secure cloud infrastructure to
                   optimize your operations.
                 </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <a href="#" class="btn">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <div class="card-header">Digital Marketing</div>
+              <div class="card-body">
+                <p class="card-text">
+                  Strategizing and executing effective digital campaigns to
+                  maximize your online presence.
+                </p>
+                <a href="#" class="btn">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <div class="card-header">Mobile App Development</div>
+              <div class="card-body">
+                <p class="card-text">
+                  Creating native and cross-platform mobile applications for
+                  diverse user needs
+                </p>
+                <a href="#" class="btn">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <div class="card-header">Cloud Solutions</div>
+              <div class="card-body">
+                <h5 class="Web designer"></h5>
+                <p class="card-text">
+                  Implementing scalable and secure cloud infrastructure to
+                  optimize your operations.
+                </p>
+                <a href="#" class="btn">Go somewhere</a>
               </div>
             </div>
           </div>
@@ -229,8 +273,8 @@
 
       <section id="portfolio">
         <h2>Our Portfolio</h2>
-        <div class="row ">
-          <div class="col-md-4">
+        <div class="row">
+          <div class="col-md-3 mb-4">
             <div class="card" style="width: 18rem">
               <img
                 src="https://picsum.photos/seed/picsum/400/250"
@@ -243,11 +287,11 @@
                   Some quick example text to build on the card title and make up
                   the bulk of the card’s content.
                 </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <a href="#" class="btn">Go somewhere</a>
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-3 mb-4">
             <div class="card" style="width: 18rem">
               <img
                 src="https://picsum.photos/seed/picsum/400/250"
@@ -260,11 +304,11 @@
                   Some quick example text to build on the card title and make up
                   the bulk of the card’s content.
                 </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <a href="#" class="btn">Go somewhere</a>
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-3 mb-4">
             <div class="card" style="width: 18rem">
               <img
                 src="https://picsum.photos/seed/picsum/400/250"
@@ -277,7 +321,24 @@
                   Some quick example text to build on the card title and make up
                   the bulk of the card’s content.
                 </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <a href="#" class="btn">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-4">
+            <div class="card" style="width: 18rem">
+              <img
+                src="https://picsum.photos/seed/picsum/400/250"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Web Developer</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card’s content.
+                </p>
+                <a href="#" class="btn">Go somewhere</a>
               </div>
             </div>
           </div>
@@ -286,45 +347,48 @@
 
       <hr class="my-5" />
 
-      <section id="Contact">
+      <section id="contact">
         <div class="container">
           <h2>Contact Us</h2>
           <form class="border border-dark border-3 mt-5 p-4 rounded shadow-lg">
-            <label for="Fullname" class="form-label">Full name:</label>
+            <label for="Fullname" class="form-label mb-2">Full name:</label>
             <input
               type="text"
               id="fullname"
               name="fullname"
               placeholder="Enter your name here"
-              class="form-control mt-2"
+              class="form-control mb-2"
             />
 
-            <label for="Email" class="form-label">Email:</label>
+            <label for="Email" class="form-label mb-2">Email:</label>
             <input
               type="Email"
               id="Email"
               name="Email"
               placeholder="Enter your email here"
-              class="form-control mt-2"
+              class="form-control mb-2"
             />
 
-            <label for="message"> Message:</label>
+            <label for="message" class="mb-2"> Message:</label>
             <textarea
               name="message"
               id="message"
               rows="5"
               cols="40"
-              class="form-control mt-2"
+              class="form-control mb-4"
               placeholder="Enter your message here"
             ></textarea>
-            <button class="btn btn-dark w-100 mt-3">Submit</button>
+            <button class="btn btn-dark w-100">Submit</button>
           </form>
         </div>
       </section>
     </main>
-     <hr class="my-5" />
-     <footer>
-      <p class="text-center"> &copy; 2025 Your Company. All rights reserved. | Designed with boostrap</p>
-     </footer>
+    <hr class="my-5" />
+    <footer>
+      <p class="text-center">
+        >&copy; 2025 Your Company. All rights reserved. | Designed with
+        bootstrap
+      </p>
+    </footer>
   </body>
 </html>
