@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AOS Animation Demo</title>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link rel="shortcut icon" href="assets/img/icon.png" type="image/x-icon" />
+
+    <style>
+      body {
+        font-family: sans-serif;
+        overflow-x: hidden;
+      }
+
+      header,
+      footer {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #f0f0f0;
+      }
+
+      .box {
+        width: 300px;
+        height: 200px;
+        background: #3498db;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        margin: 50px auto;
+        border-radius: 8px;
+      }
+
+      .container {
+        padding: 50px auto;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Scroll Down to See the Magic ↓</h1>
+    </header>
+
+    <div class="container">
+      <div
+        class="box"
+        data-aos="fade-up"
+        data-aos-delay="300"
+        data-aos-duration="1000"
+      >
+        Fade Up
+      </div>
+
+      <div class="box" data-aos="fade-right" data-aos-duration="1000">
+        Fade Right (Slow)
+      </div>
+
+      <div class="box" data-aos="flip-left">Flip Left</div>
+
+      <div class="box" data-aos="zoom-in" data-aos-delay="500">
+        Zoom In (Delayed)
+      </div>
+    </div>
+
+    <footer>
+      <h2>You've Reached the Footer ↑</h2>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      // 4. Initialize AOS
+      AOS.init();
+    </script>
+  </body>
+</html>
